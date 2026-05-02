@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="space-y-5">
               {[
                 { icon: Mail, label: "Email", value: "ar3801420@gmail.com", href: "mailto:ar3801420@gmail.com" },
-                { icon: Phone, label: "WhatsApp / Phone", value: "+92 314 2070966", href: "https://wa.me/923142070966" },
+                { icon: Phone, label: "WhatsApp / Phone", value: "+92 307 8524124", href: "https://wa.me/923078524124" },
                 { icon: MapPin, label: "Location", value: "Lahore, Pakistan" },
               ].map(({ icon: Icon, label, value, href }) => (
                 <div key={label} className="flex items-start gap-4 bg-card p-5 rounded-xl shadow-card border border-border">
