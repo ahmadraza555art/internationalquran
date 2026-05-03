@@ -16,7 +16,7 @@ const rates: Record<string, { code: string; rate: number }> = {
 
 const Packages = () => {
   const [currency, setCurrency] = useState("GBP");
-  const converted = (20000 * rates[currency].rate).toFixed(2);
+  const converted = (56 * rates[currency].rate / rates["GBP"].rate).toFixed(2);
 
   return (
     <section id="packages" className="py-24 bg-gradient-soft">
@@ -62,7 +62,7 @@ const Packages = () => {
 
         <div className="max-w-2xl mx-auto bg-card rounded-2xl p-8 shadow-card border border-border">
           <h3 className="font-display text-2xl font-bold text-primary mb-2">Standard Package Currency Converter</h3>
-          <p className="text-muted-foreground mb-6 text-sm">Convert the Standard Package price (20,000 PKR) to your preferred currency</p>
+          <p className="text-muted-foreground mb-6 text-sm">Convert the Standard Package price (56 GBP) to your preferred currency</p>
           <div className="flex flex-col sm:flex-row gap-4 items-end">
             <div className="flex-1 w-full">
               <label className="text-sm font-medium text-foreground mb-2 block">Select Currency</label>
