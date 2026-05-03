@@ -48,7 +48,7 @@ const Packages = () => {
             </div>
             <h3 className="font-display text-2xl font-bold mb-2">Standard Package</h3>
             <div className="my-6">
-              <div className="font-display text-5xl font-bold text-secondary">20,000 PKR</div>
+              <div className="font-display text-5xl font-bold text-secondary">56 GBP</div>
               <div className="text-primary-foreground/80 mt-1">Per Month</div>
             </div>
             <ul className="space-y-3 mb-8">
