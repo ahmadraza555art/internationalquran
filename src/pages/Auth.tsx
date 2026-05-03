@@ -36,11 +36,13 @@ const Auth = () => {
       toast.success("Account created! You're now logged in. 🌙");
       navigate("/chat");
     } else {
-      const { error } = await supabase.auth.signInWithPassword({ email: form.email, password: form.password });
+      const { data, error } = await supabase.auth.signInWithPassword({ email: form.email, password: form.password });
       setLoading(false);
       if (error) { toast.error(error.message); return; }
+      const { isAdmin } = await import("@/lib/auth");
+      const admin = await isAdmin(data.user?.id);
       toast.success("Welcome back!");
-      navigate("/chat");
+      navigate(admin ? "/AHMADISNOT1122/dashboard" : "/chat");
     }
   };
 
