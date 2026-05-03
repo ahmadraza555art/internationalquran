@@ -6,20 +6,25 @@ import Packages from "@/components/Packages";
 import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import GallerySection from "@/components/GallerySection";
+import { LangProvider } from "@/lib/lang";
 
 const Index = () => (
-  <div className="min-h-screen">
-    <Navbar />
-    <main>
-      <Hero />
-      <About />
-      <Courses />
-      <Packages />
-      <Registration />
-      <Contact />
-    </main>
-    <Footer />
-  </div>
+  <LangProvider>
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Courses />
+        <Packages />
+        <GallerySection />
+        <Registration />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  </LangProvider>
 );
 
 export default Index;
