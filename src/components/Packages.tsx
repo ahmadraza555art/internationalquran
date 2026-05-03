@@ -15,7 +15,7 @@ const rates: Record<string, { code: string; rate: number }> = {
 };
 
 const Packages = () => {
-  const [currency, setCurrency] = useState("PKR");
+  const [currency, setCurrency] = useState("GBP");
   const converted = (20000 * rates[currency].rate).toFixed(2);
 
   return (

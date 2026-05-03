@@ -41,7 +41,7 @@ const Registration = () => {
             <div className="absolute -bottom-6 left-6 right-6 bg-card text-card-foreground rounded-2xl p-5 shadow-elegant border border-border flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center"><Users className="text-primary-foreground" /></div>
               <div>
-                <div className="font-display font-bold text-primary text-lg">Join 500+ Students</div>
+                <div className="font-display font-bold text-primary text-lg">Join Our Students</div>
                 <div className="text-sm text-muted-foreground">Learning Quran with certified teachers</div>
               </div>
             </div>
