@@ -7,6 +7,7 @@ import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { LangProvider } from "@/lib/lang";
 
 const Index = () => (
@@ -23,6 +24,7 @@ const Index = () => (
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   </LangProvider>
 );

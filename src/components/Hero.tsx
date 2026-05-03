@@ -16,15 +16,15 @@ const Hero = () => {
             🌙 {t("Welcome to Authentic Quranic Learning", "حقیقی قرآنی تعلیم میں خوش آمدید")}
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            {t("International Learn", "انٹرنیشنل لرن")} <span className="text-secondary">{t("Quran Academy", "قرآن اکیڈمی")}</span>
+            {t("Learn Quran Online", "آن لائن قرآن سیکھیں")} <span className="text-secondary">{t("with Tajweed", "تجوید کے ساتھ")}</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-xl leading-relaxed">
-            {t("Master the Holy Quran with certified teachers. Learn Tajweed, Memorization, and Islamic Studies from the comfort of your home.",
-               "مستند اساتذہ کے ساتھ قرآن مجید سیکھیں۔ تجوید، حفظ اور اسلامی تعلیمات اپنے گھر سے سیکھیں۔")}
+            {t("Easy online Quran classes for kids and beginners. Learn Tajweed, basic Arabic, and recitation with certified teachers from the comfort of your home.",
+               "بچوں اور ابتدائی طلباء کے لیے آسان آن لائن قرآن کلاسز۔ مستند اساتذہ سے تجوید، بنیادی عربی اور تلاوت سیکھیں۔")}
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#register"><Button variant="gold" size="lg"><BookOpen /> {t("Get Started", "شروع کریں")}</Button></a>
-            <a href="#courses"><Button variant="outlineHero" size="lg">{t("Explore Courses", "کورسز دیکھیں")} <ArrowRight /></Button></a>
+            <a href="#register"><Button variant="gold" size="lg"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>
+            <a href="#courses"><Button variant="outlineHero" size="lg">{t("Join Now", "ابھی شامل ہوں")} <ArrowRight /></Button></a>
           </div>
           <div className="flex gap-8 pt-4">
             <div>
