@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { BookOpen, BookMarked, Sparkles, BookText, Brain, Languages, ScrollText, Video, Star } from "lucide-react";
 
 const courses = [
-  { icon: BookOpen, title: "Norani Qaida", desc: "Foundation course for beginners to learn Arabic alphabet, pronunciation, and basic reading skills. Perfect starting point for Quran learning.", points: ["Arabic alphabet","Pronunciation basics","Reading practice","Interactive lessons"] },
+  { icon: BookOpen, title: "Tajweedi Qaida", desc: "Foundation course for beginners to learn Arabic alphabet, pronunciation, and basic reading skills with Tajweed. Perfect starting point for Quran learning.", points: ["Arabic alphabet","Pronunciation basics","Reading practice","Interactive lessons"] },
   { icon: BookMarked, title: "Madni Qaida", desc: "Advanced foundational course focusing on Tajweed rules and proper recitation techniques with step-by-step guidance.", points: ["Tajweed basics","Proper pronunciation","Rule application","Practical exercises"] },
   { icon: Sparkles, title: "Tajweed Course", desc: "Master the art of proper Quran recitation with detailed Tajweed rules. Learn Makharij, Sifaat, and proper pronunciation from certified teachers.", points: ["Complete Tajweed rules","Makharij al-Huroof","Advanced techniques","Certification"] },
   { icon: BookText, title: "Nazrah Quran With Tajweed", desc: "Learn to read the Holy Quran with correct pronunciation and Tajweed rules. Develop fluency in Quranic recitation.", points: ["Fluent Quran reading","Tajweed application","Pronunciation perfection","Regular practice"] },
