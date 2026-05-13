@@ -7,6 +7,7 @@ import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
+import Testimonials from "@/components/Testimonials";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { LangProvider } from "@/lib/lang";
 
@@ -20,6 +21,7 @@ const Index = () => (
         <Courses />
         <Packages />
         <GallerySection />
+        <Testimonials />
         <Registration />
         <Contact />
       </main>
