@@ -43,6 +43,14 @@ const reviews = [
       ur: "بیرون ملک رہنے والے ہر مسلم خاندان کے لیے انتہائی تجویز کردہ۔ اساتذہ بچوں سے خوبصورتی سے جڑتے ہیں اور قیمتیں بہت مناسب ہیں۔",
     },
   },
+  {
+    name: { en: "Khadija Hussain", ur: "خدیجہ حسین" },
+    role: { en: "Mother from Bradford", ur: "بریڈفورڈ سے ایک ماں" },
+    text: {
+      en: "SubhanAllah, the teachers are so kind and well-trained. My son now reads Quran with proper Tajweed and loves attending every class. May Allah bless this academy.",
+      ur: "سبحان اللہ، اساتذہ بہت مہربان اور تربیت یافتہ ہیں۔ میرا بیٹا اب صحیح تجوید کے ساتھ قرآن پڑھتا ہے اور ہر کلاس میں شوق سے شرکت کرتا ہے۔ اللہ اس اکیڈمی کو برکت دے۔",
+    },
+  },
 ];
 
 const Testimonials = () => {
