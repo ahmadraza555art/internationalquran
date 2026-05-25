@@ -15,12 +15,14 @@ const Hero = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-sm font-medium backdrop-blur">
             🌙 {t("Welcome to Authentic Quranic Learning", "حقیقی قرآنی تعلیم میں خوش آمدید")}
           </span>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            {t("Learn Quran Online", "آن لائن قرآن سیکھیں")} <span className="text-secondary">{t("with Tajweed", "تجوید کے ساتھ")}</span>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            {t("Welcome to the Leading ", "")}
+            <span className="text-secondary">{t("Online Quran Academy", "آن لائن قرآن اکیڈمی")}</span>
+            {t(" for Kids & Adults", " بچوں اور بڑوں کے لیے")}
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-xl leading-relaxed">
-            {t("Easy online Quran classes for kids and beginners. Learn Tajweed, basic Arabic, and recitation with certified teachers from the comfort of your home.",
-               "بچوں اور ابتدائی طلباء کے لیے آسان آن لائن قرآن کلاسز۔ مستند اساتذہ سے تجوید، بنیادی عربی اور تلاوت سیکھیں۔")}
+            {t("Welcome to our International Online Quran Academy, a trusted global platform dedicated to helping you and your family learn Quran online from the comfort of your home. With expert male and female tutors, we offer customized Quran classes for kids and adults designed to perfect your Tajweed and recitation.",
+               "ہماری انٹرنیشنل آن لائن قرآن اکیڈمی میں خوش آمدید — ایک قابلِ اعتماد عالمی پلیٹ فارم جو آپ اور آپ کے خاندان کو گھر بیٹھے آن لائن قرآن سیکھنے میں مدد دیتا ہے۔ مستند مرد و خواتین اساتذہ کے ساتھ بچوں اور بڑوں کے لیے تجوید و تلاوت کی خصوصی کلاسز۔")}
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#register"><Button variant="gold" size="lg"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>

@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-primary text-primary-foreground py-12">
     <div className="container mx-auto px-4 text-center">
       <div className="flex items-center justify-center gap-3 mb-4">
-        <img src={logo} alt="ILQA" className="w-14 h-14 object-contain bg-white/10 rounded-full p-1" />
+        <img src={logo} alt="International Online Quran Academy logo" className="w-14 h-14 object-contain bg-white/10 rounded-full p-1" />
         <span className="font-display font-bold text-xl">International Learn Quran Academy</span>
       </div>
       <p className="text-primary-foreground/70 max-w-xl mx-auto mb-4">Spreading the light of the Holy Quran with authentic, accessible online learning for students worldwide.</p>

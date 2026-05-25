@@ -37,7 +37,7 @@ const Registration = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-gold rounded-3xl blur-2xl opacity-20" />
-            <img src={studentImg} alt="Students learning Quran" loading="lazy" width={1024} height={1024} className="relative w-full rounded-3xl shadow-elegant" />
+            <img src={studentImg} alt="Online Quran Academy student learning Quran online with Tajweed teacher" loading="lazy" width={1024} height={1024} className="relative w-full rounded-3xl shadow-elegant" />
             <div className="absolute -bottom-6 left-6 right-6 bg-card text-card-foreground rounded-2xl p-5 shadow-elegant border border-border flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center"><Users className="text-primary-foreground" /></div>
               <div>

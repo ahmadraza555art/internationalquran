@@ -18,7 +18,7 @@ const Courses = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Our Courses</span>
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Our Courses & Services</h2>
+        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Our Online Quran Classes for Kids and Adults</h2>
         <p className="text-muted-foreground text-lg">Comprehensive Quranic education tailored to your needs and learning pace</p>
       </div>
 
