@@ -42,7 +42,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border">
       <nav className="container mx-auto flex items-center justify-between py-3 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="ILQA Logo" className="w-12 h-12 object-contain" />
+          <img src={logo} alt="International Online Quran Academy logo" className="w-12 h-12 object-contain" />
           <span className="font-display font-bold text-base text-primary hidden sm:block leading-tight">
             {t("International Learn", "انٹرنیشنل لرن")}<br /><span className="text-secondary">{t("Quran Academy", "قرآن اکیڈمی")}</span>
           </span>
