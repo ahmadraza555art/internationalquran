@@ -49,7 +49,7 @@ const About = () => {
         </div>
 
         <div>
-          <h3 className="font-display text-3xl font-bold text-primary text-center mb-8">Why Choose International Learn Quran Academy?</h3>
+          <h2 className="font-display text-3xl font-bold text-primary text-center mb-8">Why Choose Our International Quran Academy?</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {reasons.map((r) => (
               <div key={r} className="bg-card p-5 rounded-xl border border-border hover:border-secondary transition-smooth flex items-start gap-3">
