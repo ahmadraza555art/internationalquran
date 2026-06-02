@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 import { supabase } from "@/integrations/supabase/client";
 
 interface Item { id: string; title: string; description: string | null; media_type: string; media_url: string; }
@@ -16,6 +17,11 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Seo
+        title="Gallery - International Online Quran Academy"
+        description="Photos and videos from our online Quran classes, events and students at International Learn Quran Academy."
+        path="/gallery"
+      />
       <Navbar />
       <main className="flex-1 pt-24 pb-16 bg-gradient-soft">
         <div className="container mx-auto px-4">

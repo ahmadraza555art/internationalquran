@@ -66,8 +66,8 @@ const Navbar = () => {
             <Link to="/auth"><Button variant="hero" size="sm"><LogIn className="w-4 h-4" /> {t("Login","لاگ ان")}</Button></Link>
           )}
         </div>
-        <button className="lg:hidden text-primary" onClick={() => setOpen(!open)} aria-label="Menu">
-          {open ? <X /> : <Menu />}
+        <button className="lg:hidden text-primary" onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
+          {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
       </nav>
       {open && (
