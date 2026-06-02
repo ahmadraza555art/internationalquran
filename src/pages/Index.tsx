@@ -9,10 +9,16 @@ import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
 import Testimonials from "@/components/Testimonials";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Seo from "@/components/Seo";
 import { LangProvider } from "@/lib/lang";
 
 const Index = () => (
   <LangProvider>
+    <Seo
+      title="International Online Quran Academy - Learn Quran Online"
+      description="Learn Quran online with qualified tutors. Interactive Quran classes with Tajweed for kids and adults. Book your free trial today!"
+      path="/"
+    />
     <div className="min-h-screen">
       <Navbar />
       <main>

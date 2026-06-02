@@ -71,9 +71,10 @@ const Chat = () => {
       <Navbar />
       <main className="flex-1 pt-24 pb-12 bg-gradient-soft">
         <div className="container mx-auto max-w-2xl px-4">
+          <h1 className="sr-only">Academy Support Chat</h1>
           <div className="bg-card rounded-2xl shadow-elegant border border-border overflow-hidden flex flex-col h-[70vh]">
             <div className="bg-gradient-hero text-primary-foreground p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"><MessageCircle /></div>
+              <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"><MessageCircle aria-hidden="true" /></div>
               <div>
                 <div className="font-display font-bold">Academy Support</div>
                 <div className="text-xs opacity-80">We typically reply within a few hours</div>
@@ -96,7 +97,7 @@ const Chat = () => {
             </div>
             <form onSubmit={send} className="border-t border-border p-3 flex gap-2">
               <Input value={input} onChange={(e)=>setInput(e.target.value)} placeholder="Type your message..." />
-              <Button type="submit" variant="hero" size="icon"><Send className="w-4 h-4" /></Button>
+              <Button type="submit" variant="hero" size="icon" aria-label="Send message"><Send className="w-4 h-4" aria-hidden="true" /></Button>
             </form>
           </div>
         </div>
