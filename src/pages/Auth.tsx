@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import Seo from "@/components/Seo";
 import logo from "@/assets/logo.png";
 
 const Auth = () => {
@@ -48,6 +49,11 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-hero p-4">
+      <Seo
+        title="Student Login - International Online Quran Academy"
+        description="Login or sign up to chat with International Learn Quran Academy and start your online Quran classes."
+        path="/auth"
+      />
       <div className="w-full max-w-md bg-card rounded-2xl shadow-elegant border border-border p-8">
         <Link to="/" className="flex flex-col items-center gap-2 mb-6">
           <img src={logo} alt="International Learn Quran Academy Logo" className="w-20 h-20 object-contain" />
