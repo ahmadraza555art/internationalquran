@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /AHMADISNOT1122
+
+Sitemap: https://internationalquran.lovable.app/sitemap.xml

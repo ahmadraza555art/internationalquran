@@ -1,0 +1,12 @@
+# International Learn Quran Academy
+
+> International Online Quran Academy offering live, one-on-one Quran classes for kids and adults worldwide — Quran reading with Tajweed, memorization (Hifz), and Arabic with qualified male and female tutors.
+
+## Pages
+
+- [Home](/): Learn Quran online with qualified tutors. Courses, packages, gallery, and free trial registration.
+- [Gallery](/gallery): Photos from our online Quran classes and students.
+
+## Optional
+
+- [Login](/auth): Student login to chat with the academy.
