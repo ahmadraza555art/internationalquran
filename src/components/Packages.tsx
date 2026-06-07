@@ -22,17 +22,19 @@ const Packages = () => {
   const converted = (56 * rates[currency].rate / rates["GBP"].rate).toFixed(2);
 
   return (
-    <section id="packages" className="py-24 bg-gradient-soft">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="packages" className="relative py-24 bg-gradient-soft overflow-hidden">
+      <img src={patternLight} alt="" aria-hidden="true" width={1280} height={1280} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Pricing</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Our Packages</h2>
           <p className="text-muted-foreground text-lg">Choose the perfect package for your Quranic learning journey</p>
-        </div>
+        </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-          <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 items-center">
+          <Reveal variant="left" className="bg-card rounded-2xl p-8 shadow-card border border-border hover:shadow-elegant transition-smooth">
             <h3 className="font-display text-2xl font-bold text-primary mb-2">Free Trial</h3>
+
             <div className="my-6">
               <div className="font-display text-5xl font-bold text-primary">FREE</div>
               <div className="text-muted-foreground mt-1">3 Days</div>
