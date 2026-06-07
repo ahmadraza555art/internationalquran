@@ -5,7 +5,9 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import studentImg from "@/assets/student-learning.jpg";
+import quranStand from "@/assets/quran-stand.jpg";
 import { Users } from "lucide-react";
+
 
 const courses = ["Norani Qaida","Madni Qaida","Tajweed Course","Quran Memorization (Hifz)","Online Quran Classes","Tafseer & Islamic Studies"];
 const packages = ["Free Trial","Standard Package"];
