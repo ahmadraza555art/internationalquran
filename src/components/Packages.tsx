@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Crown } from "lucide-react";
+import Reveal from "@/components/Reveal";
+import patternLight from "@/assets/pattern-light.jpg";
+
 
 const rates: Record<string, { code: string; rate: number }> = {
   PKR: { code: "PKR", rate: 1 },
