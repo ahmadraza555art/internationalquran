@@ -28,8 +28,10 @@ const Registration = () => {
   };
 
   return (
-    <section id="register" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="register" className="relative py-24 bg-background overflow-hidden">
+      <img src={quranStand} alt="" aria-hidden="true" width={1600} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Join Us</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Register Now</h2>
