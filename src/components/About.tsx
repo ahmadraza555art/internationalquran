@@ -1,4 +1,6 @@
 import { Target, Eye, Users, GraduationCap, CheckCircle2 } from "lucide-react";
+import Reveal from "@/components/Reveal";
+import patternLight from "@/assets/pattern-light.jpg";
 
 const About = () => {
   const cards = [
@@ -12,27 +14,30 @@ const About = () => {
   const reasons = ["One-on-One personalized classes","Flexible scheduling to suit your timezone","Qualified teachers with Ijazah certification","Interactive online learning platform","Progress tracking and regular assessments","Affordable pricing with multiple packages","Free trial class for new students","Special courses for children and adults"];
 
   return (
-    <section id="about" className="py-24 bg-gradient-soft">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="about" className="relative py-24 bg-gradient-soft overflow-hidden">
+      <img src={patternLight} alt="" aria-hidden="true" width={1280} height={1280} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-secondary font-semibold uppercase tracking-wider text-sm">About Us</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">About Our Academy</h2>
           <p className="text-muted-foreground text-lg">Dedicated to spreading the knowledge of the Holy Quran worldwide with excellence and authenticity</p>
-        </div>
+        </Reveal>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {cards.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="bg-card p-8 rounded-2xl shadow-card hover:shadow-elegant transition-smooth border border-border group">
-              <div className="w-14 h-14 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth">
-                <Icon className="w-7 h-7 text-primary-foreground" />
+          {cards.map(({ icon: Icon, title, text }, i) => (
+            <Reveal key={title} delay={i * 120} variant="up">
+              <div className="h-full bg-card p-8 rounded-2xl shadow-card hover:shadow-elegant hover:-translate-y-2 transition-smooth border border-border group">
+                <div className="w-14 h-14 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth">
+                  <Icon className="w-7 h-7 text-primary-foreground" />
+                </div>
+                <h3 className="font-display text-2xl font-bold text-primary mb-3">{title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{text}</p>
               </div>
-              <h3 className="font-display text-2xl font-bold text-primary mb-3">{title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{text}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border mb-16">
+        <Reveal variant="scale" className="bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border mb-16">
           <div className="flex items-center gap-3 mb-2">
             <GraduationCap className="text-secondary w-8 h-8" />
             <h3 className="font-display text-3xl font-bold text-primary">Academy Founder's Qualifications</h3>
@@ -40,22 +45,24 @@ const About = () => {
           <p className="text-muted-foreground mb-8">Led by a highly qualified scholar with extensive Islamic education and diverse academic excellence</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {quals.map((q) => (
-              <div key={q} className="flex items-center gap-3 bg-muted/50 px-4 py-3 rounded-lg">
+              <div key={q} className="flex items-center gap-3 bg-muted/50 px-4 py-3 rounded-lg hover:bg-muted transition-smooth">
                 <CheckCircle2 className="text-primary w-5 h-5 shrink-0" />
                 <span className="text-foreground font-medium text-sm">{q}</span>
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
 
         <div>
-          <h2 className="font-display text-3xl font-bold text-primary text-center mb-8">Why Choose Our International Quran Academy?</h2>
+          <Reveal as="h2" className="font-display text-3xl font-bold text-primary text-center mb-8">Why Choose Our International Quran Academy?</Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {reasons.map((r) => (
-              <div key={r} className="bg-card p-5 rounded-xl border border-border hover:border-secondary transition-smooth flex items-start gap-3">
-                <CheckCircle2 className="text-secondary w-5 h-5 shrink-0 mt-0.5" />
-                <span className="text-foreground text-sm font-medium">{r}</span>
-              </div>
+            {reasons.map((r, i) => (
+              <Reveal key={r} delay={i * 80} variant="up">
+                <div className="h-full bg-card p-5 rounded-xl border border-border hover:border-secondary hover:-translate-y-1 transition-smooth flex items-start gap-3">
+                  <CheckCircle2 className="text-secondary w-5 h-5 shrink-0 mt-0.5" />
+                  <span className="text-foreground text-sm font-medium">{r}</span>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
