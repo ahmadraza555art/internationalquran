@@ -67,7 +67,7 @@ const Packages = () => {
         </div>
 
 
-        <div className="max-w-2xl mx-auto bg-card rounded-2xl p-8 shadow-card border border-border">
+        <Reveal variant="up" className="max-w-2xl mx-auto bg-card rounded-2xl p-8 shadow-card border border-border">
           <h3 className="font-display text-2xl font-bold text-primary mb-2">Standard Package Currency Converter</h3>
           <p className="text-muted-foreground mb-6 text-sm">Convert the Standard Package price (56 GBP) to your preferred currency</p>
           <div className="flex flex-col sm:flex-row gap-4 items-end">
