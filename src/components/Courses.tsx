@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, BookMarked, Sparkles, BookText, Brain, Languages, ScrollText, Video, Star } from "lucide-react";
+import Reveal from "@/components/Reveal";
+import islamicPattern from "@/assets/islamic-pattern.jpg";
 
 const courses = [
   { icon: BookOpen, title: "Tajweedi Qaida", desc: "Foundation course for beginners to learn Arabic alphabet, pronunciation, and basic reading skills with Tajweed. Perfect starting point for Quran learning.", points: ["Arabic alphabet","Pronunciation basics","Reading practice","Interactive lessons"] },
@@ -14,32 +16,35 @@ const courses = [
 ];
 
 const Courses = () => (
-  <section id="courses" className="py-24 bg-background">
-    <div className="container mx-auto px-4">
-      <div className="text-center max-w-3xl mx-auto mb-16">
+  <section id="courses" className="relative py-24 bg-background overflow-hidden">
+    <img src={islamicPattern} alt="" aria-hidden="true" width={1280} height={1280} loading="lazy" className="absolute top-0 right-0 w-1/2 h-full object-cover opacity-[0.04] pointer-events-none" />
+    <div className="container mx-auto px-4 relative z-10">
+      <Reveal className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Our Courses</span>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Our Online Quran Classes for Kids and Adults</h2>
         <p className="text-muted-foreground text-lg">Comprehensive Quranic education tailored to your needs and learning pace</p>
-      </div>
+      </Reveal>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {courses.map(({ icon: Icon, title, desc, points }) => (
-          <div key={title} className="group bg-card rounded-2xl p-6 shadow-card hover:shadow-elegant border border-border hover:border-secondary transition-smooth flex flex-col">
-            <div className="w-14 h-14 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-smooth">
-              <Icon className="w-7 h-7 text-primary-foreground" />
+        {courses.map(({ icon: Icon, title, desc, points }, i) => (
+          <Reveal key={title} delay={(i % 3) * 120} variant="up">
+            <div className="group h-full bg-card rounded-2xl p-6 shadow-card hover:shadow-elegant hover:-translate-y-2 border border-border hover:border-secondary transition-smooth flex flex-col">
+              <div className="w-14 h-14 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-smooth">
+                <Icon className="w-7 h-7 text-primary-foreground" />
+              </div>
+              <h3 className="font-display text-xl font-bold text-primary mb-2">{title}</h3>
+              <p className="text-muted-foreground text-sm mb-4 flex-grow">{desc}</p>
+              <ul className="space-y-2 mb-6">
+                {points.map((p) => (
+                  <li key={p} className="flex items-start gap-2 text-sm">
+                    <span className="text-secondary mt-1">●</span>
+                    <span className="text-foreground">{p}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="#register"><Button variant="hero" className="w-full">Enroll Now</Button></a>
             </div>
-            <h3 className="font-display text-xl font-bold text-primary mb-2">{title}</h3>
-            <p className="text-muted-foreground text-sm mb-4 flex-grow">{desc}</p>
-            <ul className="space-y-2 mb-6">
-              {points.map((p) => (
-                <li key={p} className="flex items-start gap-2 text-sm">
-                  <span className="text-secondary mt-1">●</span>
-                  <span className="text-foreground">{p}</span>
-                </li>
-              ))}
-            </ul>
-            <a href="#register"><Button variant="hero" className="w-full">Enroll Now</Button></a>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>

@@ -1,14 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, ArrowRight } from "lucide-react";
 import adVideo from "@/assets/ad-video.mp4";
+import mosqueBg from "@/assets/mosque-bg.jpg";
 import { useLang } from "@/lib/lang";
 
 const Hero = () => {
   const { t } = useLang();
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden pt-20">
+      <img
+        src={mosqueBg}
+        alt="Online Quran Academy mosque silhouette at sunset"
+        width={1600}
+        height={900}
+        className="absolute inset-0 w-full h-full object-cover opacity-25 mix-blend-luminosity animate-slow-zoom pointer-events-none"
+      />
+      <div className="absolute inset-0 bg-gradient-hero/70 bg-[linear-gradient(135deg,hsl(150_60%_22%/0.85),hsl(150_55%_35%/0.75))]" />
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,_hsl(45_85%_60%/0.4),_transparent_60%)]" />
-      <div className="absolute top-10 right-10 text-secondary/20 font-arabic text-[8rem] leading-none select-none pointer-events-none">﷽</div>
+      <div className="absolute top-10 right-10 text-secondary/20 font-arabic text-[8rem] leading-none select-none pointer-events-none animate-float">﷽</div>
+
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 py-16">
         <div className="text-primary-foreground space-y-8 animate-fade-in">
