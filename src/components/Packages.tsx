@@ -63,8 +63,9 @@ const Packages = () => {
               ))}
             </ul>
             <a href="#register"><Button variant="gold" className="w-full">Enroll Now</Button></a>
-          </div>
+          </Reveal>
         </div>
+
 
         <div className="max-w-2xl mx-auto bg-card rounded-2xl p-8 shadow-card border border-border">
           <h3 className="font-display text-2xl font-bold text-primary mb-2">Standard Package Currency Converter</h3>
