@@ -45,9 +45,10 @@ const Packages = () => {
               ))}
             </ul>
             <a href="#register"><Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">Enroll Now</Button></a>
-          </div>
+          </Reveal>
 
-          <div className="relative bg-gradient-hero text-primary-foreground rounded-2xl p-8 shadow-elegant scale-105 border-2 border-secondary">
+          <Reveal variant="right" className="relative bg-gradient-hero text-primary-foreground rounded-2xl p-8 shadow-elegant md:scale-105 border-2 border-secondary hover:shadow-gold transition-smooth">
+
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-gold text-secondary-foreground px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1 shadow-gold">
               <Crown className="w-4 h-4" /> Most Popular
             </div>
