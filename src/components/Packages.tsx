@@ -82,7 +82,8 @@ const Packages = () => {
               <div className="font-display text-2xl font-bold text-primary">{converted} {currency}</div>
             </div>
           </div>
-        </div>
+        </Reveal>
+
       </div>
     </section>
   );
