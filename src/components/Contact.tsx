@@ -6,6 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import mosqueInterior from "@/assets/mosque-interior.jpg";
+
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -22,8 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-soft">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="relative py-24 bg-gradient-soft overflow-hidden">
+      <img src={mosqueInterior} alt="" aria-hidden="true" width={1600} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-[0.07] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Contact</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4">Contact Us</h2>

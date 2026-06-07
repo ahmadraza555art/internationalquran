@@ -1,6 +1,8 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLang } from "@/lib/lang";
+import crescentNight from "@/assets/crescent-night.jpg";
+
 
 const reviews = [
   {
@@ -56,8 +58,10 @@ const reviews = [
 const Testimonials = () => {
   const { t } = useLang();
   return (
-    <section id="testimonials" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="relative py-20 bg-muted/30 overflow-hidden">
+      <img src={crescentNight} alt="" aria-hidden="true" width={1600} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
+
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t("What Muslim Parents Say", "مسلم والدین کیا کہتے ہیں")}
