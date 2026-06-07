@@ -1,6 +1,8 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLang } from "@/lib/lang";
+import crescentNight from "@/assets/crescent-night.jpg";
+
 
 const reviews = [
   {
