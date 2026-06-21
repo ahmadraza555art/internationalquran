@@ -1,0 +1,18 @@
+{
+  "name": "International Learn Quran Academy",
+  "short_name": "ILQA App",
+  "description": "Learn Quran online with Tajweed. Live 1-on-1 Quran classes for kids & adults.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
