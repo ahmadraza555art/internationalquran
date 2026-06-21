@@ -22,6 +22,9 @@ const Footer = () => (
           <Youtube className="w-5 h-5 text-red-500" /> YouTube Channel
         </a>
       </div>
+      <div className="flex items-center justify-center mb-4">
+        <DownloadAppButton />
+      </div>
       <div className="text-sm text-primary-foreground/80 mb-4">📞 +92 307 8524124 &nbsp;|&nbsp; ✉️ ar3801420@gmail.com</div>
       <div className="text-primary-foreground/60 text-sm border-t border-primary-foreground/20 pt-6">© {new Date().getFullYear()} International Learn Quran Academy. All rights reserved.</div>
     </div>
