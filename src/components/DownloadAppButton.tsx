@@ -21,6 +21,7 @@ const DownloadAppButton = () => {
   const [showDialog, setShowDialog] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
   const [isStandalone, setIsStandalone] = useState(false);
+  const [autoPrompted, setAutoPrompted] = useState(false);
 
   useEffect(() => {
     // Detect iOS Safari
@@ -42,6 +43,14 @@ const DownloadAppButton = () => {
     window.addEventListener("beforeinstallprompt", handler);
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
+
+  // Auto-show install dialog when browser signals eligibility
+  useEffect(() => {
+    if (deferredPrompt && !autoPrompted && !isStandalone) {
+      setShowDialog(true);
+      setAutoPrompted(true);
+    }
+  }, [deferredPrompt, autoPrompted, isStandalone]);
 
   const handleInstallClick = useCallback(() => {
     setShowDialog(true);
