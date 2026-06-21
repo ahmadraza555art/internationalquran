@@ -1,5 +1,6 @@
 import { Youtube } from "lucide-react";
 import logo from "@/assets/logo.png";
+import DownloadAppButton from "./DownloadAppButton";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground py-12">
