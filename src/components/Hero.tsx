@@ -7,7 +7,7 @@ import { useLang } from "@/lib/lang";
 const Hero = () => {
   const { t } = useLang();
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero animate-gradient overflow-hidden pt-20">
       <img
         src={mosqueBg}
         alt="Online Quran Academy mosque silhouette at sunset"
@@ -17,7 +17,30 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-hero/70 bg-[linear-gradient(135deg,hsl(150_60%_22%/0.85),hsl(150_55%_35%/0.75))]" />
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,_hsl(45_85%_60%/0.4),_transparent_60%)]" />
+
+      {/* Animated glowing orbs */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl animate-blob pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-primary-glow/30 blur-3xl animate-blob pointer-events-none" style={{ animationDelay: "4s" }} />
+
+      {/* Twinkling stars */}
+      {[
+        { top: "15%", left: "20%", d: "0s" },
+        { top: "30%", left: "70%", d: "0.6s" },
+        { top: "60%", left: "12%", d: "1.2s" },
+        { top: "75%", left: "55%", d: "1.8s" },
+        { top: "22%", left: "45%", d: "2.4s" },
+        { top: "50%", left: "85%", d: "1s" },
+      ].map((s, i) => (
+        <span
+          key={i}
+          className="absolute w-1.5 h-1.5 rounded-full bg-secondary animate-twinkle pointer-events-none"
+          style={{ top: s.top, left: s.left, animationDelay: s.d }}
+        />
+      ))}
+
       <div className="absolute top-10 right-10 text-secondary/20 font-arabic text-[8rem] leading-none select-none pointer-events-none animate-float">﷽</div>
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full border border-secondary/10 animate-spin-slow pointer-events-none" />
+
 
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 py-16">
