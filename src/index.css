@@ -60,3 +60,24 @@
     font-family: 'Amiri', serif;
   }
 }
+
+@layer utilities {
+  .text-shimmer {
+    background: linear-gradient(90deg, hsl(45 70% 55%), hsl(45 95% 75%), hsl(45 70% 55%));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-elegant;
+  }
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+}

@@ -94,6 +94,27 @@ export default {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "gradient-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        "glow-pulse": {
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(45 80% 55% / 0.5)" },
+          "50%": { boxShadow: "0 0 28px 8px hsl(45 80% 55% / 0.45)" },
+        },
+        blob: {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "33%": { transform: "translate(30px,-40px) scale(1.1)" },
+          "66%": { transform: "translate(-20px,20px) scale(0.95)" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0.2", transform: "scale(0.8)" },
+          "50%": { opacity: "1", transform: "scale(1.2)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -102,6 +123,11 @@ export default {
         float: "float 6s ease-in-out infinite",
         "slow-zoom": "slow-zoom 20s ease-in-out infinite alternate",
         shimmer: "shimmer 3s linear infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "glow-pulse": "glow-pulse 2.5s ease-in-out infinite",
+        blob: "blob 14s ease-in-out infinite",
+        "spin-slow": "spin-slow 28s linear infinite",
+        twinkle: "twinkle 3s ease-in-out infinite",
       },
     },
   },

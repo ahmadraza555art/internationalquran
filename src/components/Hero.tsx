@@ -7,7 +7,7 @@ import { useLang } from "@/lib/lang";
 const Hero = () => {
   const { t } = useLang();
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero animate-gradient overflow-hidden pt-20">
       <img
         src={mosqueBg}
         alt="Online Quran Academy mosque silhouette at sunset"
@@ -17,7 +17,30 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-hero/70 bg-[linear-gradient(135deg,hsl(150_60%_22%/0.85),hsl(150_55%_35%/0.75))]" />
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,_hsl(45_85%_60%/0.4),_transparent_60%)]" />
+
+      {/* Animated glowing orbs */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl animate-blob pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-primary-glow/30 blur-3xl animate-blob pointer-events-none" style={{ animationDelay: "4s" }} />
+
+      {/* Twinkling stars */}
+      {[
+        { top: "15%", left: "20%", d: "0s" },
+        { top: "30%", left: "70%", d: "0.6s" },
+        { top: "60%", left: "12%", d: "1.2s" },
+        { top: "75%", left: "55%", d: "1.8s" },
+        { top: "22%", left: "45%", d: "2.4s" },
+        { top: "50%", left: "85%", d: "1s" },
+      ].map((s, i) => (
+        <span
+          key={i}
+          className="absolute w-1.5 h-1.5 rounded-full bg-secondary animate-twinkle pointer-events-none"
+          style={{ top: s.top, left: s.left, animationDelay: s.d }}
+        />
+      ))}
+
       <div className="absolute top-10 right-10 text-secondary/20 font-arabic text-[8rem] leading-none select-none pointer-events-none animate-float">﷽</div>
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full border border-secondary/10 animate-spin-slow pointer-events-none" />
+
 
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 py-16">
@@ -27,7 +50,7 @@ const Hero = () => {
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             {t("Welcome to the Leading ", "")}
-            <span className="text-secondary">{t("Online Quran Academy", "آن لائن قرآن اکیڈمی")}</span>
+            <span className="text-shimmer">{t("Online Quran Academy", "آن لائن قرآن اکیڈمی")}</span>
             {t(" for Kids & Adults", " بچوں اور بڑوں کے لیے")}
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-xl leading-relaxed">
@@ -35,7 +58,7 @@ const Hero = () => {
                "ہماری انٹرنیشنل آن لائن قرآن اکیڈمی میں خوش آمدید — ایک قابلِ اعتماد عالمی پلیٹ فارم جو آپ اور آپ کے خاندان کو گھر بیٹھے آن لائن قرآن سیکھنے میں مدد دیتا ہے۔ مستند مرد و خواتین اساتذہ کے ساتھ بچوں اور بڑوں کے لیے تجوید و تلاوت کی خصوصی کلاسز۔")}
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#register"><Button variant="gold" size="lg"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>
+            <a href="#register"><Button variant="gold" size="lg" className="animate-glow-pulse hover-scale"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>
             <a href="#courses"><Button variant="outlineHero" size="lg">{t("Join Now", "ابھی شامل ہوں")} <ArrowRight /></Button></a>
           </div>
           <div className="flex gap-8 pt-4">
