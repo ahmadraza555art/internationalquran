@@ -58,7 +58,7 @@ const Hero = () => {
                "ہماری انٹرنیشنل آن لائن قرآن اکیڈمی میں خوش آمدید — ایک قابلِ اعتماد عالمی پلیٹ فارم جو آپ اور آپ کے خاندان کو گھر بیٹھے آن لائن قرآن سیکھنے میں مدد دیتا ہے۔ مستند مرد و خواتین اساتذہ کے ساتھ بچوں اور بڑوں کے لیے تجوید و تلاوت کی خصوصی کلاسز۔")}
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#register"><Button variant="gold" size="lg"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>
+            <a href="#register"><Button variant="gold" size="lg" className="animate-glow-pulse hover-scale"><BookOpen /> {t("Start Learning", "ابھی شروع کریں")}</Button></a>
             <a href="#courses"><Button variant="outlineHero" size="lg">{t("Join Now", "ابھی شامل ہوں")} <ArrowRight /></Button></a>
           </div>
           <div className="flex gap-8 pt-4">
