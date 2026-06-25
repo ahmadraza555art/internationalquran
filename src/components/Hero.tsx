@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, ArrowRight } from "lucide-react";
 import adVideo from "@/assets/ad-video.mp4";
-import mosqueBg from "@/assets/mosque-bg.jpg";
+import mosqueBg from "@/assets/hero-mosque-grand.jpg";
 import { useLang } from "@/lib/lang";
 
 const Hero = () => {
