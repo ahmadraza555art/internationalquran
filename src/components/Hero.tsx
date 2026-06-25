@@ -50,7 +50,7 @@ const Hero = () => {
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             {t("Welcome to the Leading ", "")}
-            <span className="text-secondary">{t("Online Quran Academy", "آن لائن قرآن اکیڈمی")}</span>
+            <span className="text-shimmer">{t("Online Quran Academy", "آن لائن قرآن اکیڈمی")}</span>
             {t(" for Kids & Adults", " بچوں اور بڑوں کے لیے")}
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-xl leading-relaxed">
