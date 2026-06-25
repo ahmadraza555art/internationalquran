@@ -10,13 +10,13 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero animate-gradient overflow-hidden pt-20">
       <img
         src={mosqueBg}
-        alt="Online Quran Academy mosque silhouette at sunset"
-        width={1600}
-        height={900}
-        className="absolute inset-0 w-full h-full object-cover opacity-25 mix-blend-luminosity animate-slow-zoom pointer-events-none"
+        alt="Grand mosque at golden sunset — Online Quran Academy"
+        width={1920}
+        height={1280}
+        className="absolute inset-0 w-full h-full object-cover animate-slow-zoom pointer-events-none"
       />
-      <div className="absolute inset-0 bg-gradient-hero/70 bg-[linear-gradient(135deg,hsl(150_60%_22%/0.85),hsl(150_55%_35%/0.75))]" />
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,_hsl(45_85%_60%/0.4),_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,hsl(150_60%_12%/0.92),hsl(150_55%_22%/0.7)_45%,hsl(150_50%_18%/0.45))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,_hsl(45_85%_60%/0.25),_transparent_55%)]" />
 
       {/* Animated glowing orbs */}
       <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl animate-blob pointer-events-none" />
